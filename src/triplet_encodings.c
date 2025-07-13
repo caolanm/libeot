@@ -4,7 +4,7 @@
  */
 
 #include "triplet_encodings.h"
-struct TripletEncoding tripletEncodings[] = {
+const struct TripletEncoding tripletEncodings[] = {
     {2, 0, 8, 0, 0, 0, -1},      {2, 0, 8, 0, 0, 0, 1},
     {2, 0, 8, 0, 256, 0, -1},    {2, 0, 8, 0, 256, 0, 1},
     {2, 0, 8, 0, 512, 0, -1},    {2, 0, 8, 0, 512, 0, 1},
