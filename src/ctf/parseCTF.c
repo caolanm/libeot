@@ -398,7 +398,7 @@ enum EOTError decodeSimpleGlyph(int16_t numContours, struct Stream **streams,
   }
   unsigned currX = 0, currY = 0;
   for (unsigned i = 0; i < totalPoints; ++i) {
-    struct TripletEncoding enc = tripletEncodings[flags[i] & 0x7F];
+    const struct TripletEncoding enc = tripletEncodings[flags[i] & 0x7F];
     unsigned moreBytes = enc.byteCount - 1;
     if (in->pos + moreBytes > in->size) {
       returnedStatus = EOT_CORRUPT_FILE;

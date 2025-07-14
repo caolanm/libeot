@@ -16,6 +16,6 @@ struct TripletEncoding {
   int ySign;
 };
 
-extern struct TripletEncoding tripletEncodings[];
+extern const struct TripletEncoding tripletEncodings[];
 
 #endif /* #define __LIBEOT_TRIPLET_ENCODINGS_H__ */
